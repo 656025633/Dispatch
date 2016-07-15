@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+           >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RadioGroup
+        android:id="@+id/control_rg"
+        android:layout_width="210dp"
+        android:layout_height="29dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+
+        >
+        <RadioButton
+            android:id="@+id/control_message"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:text="实时消息"
+            android:gravity="center"
+            android:textColor="@color/color_txt"
+            android:background="@drawable/selector_operation_indicator_left"
+            />
+        <RadioButton
+            android:id="@+id/control_command"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:text="客运命令"
+            android:gravity="center"
+            android:textColor="@color/color_txt"
+            android:background="@drawable/selector_operation_indicator_middle"
+            />
+        <RadioButton
+            android:id="@+id/control_call"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:text="呼叫"
+            android:gravity="center"
+            android:textColor="@color/color_txt"
+            android:background="@drawable/selector_operation_indicator_right"
+            android:checked="false"/>
+    </RadioGroup>
+    <ImageView
+        android:id="@+id/control_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/search_blue"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="13dp"
+        />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#acacac"
+        />
+
+<FrameLayout
+    android:id="@+id/control_content"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    >
+</FrameLayout>
+</LinearLayout>

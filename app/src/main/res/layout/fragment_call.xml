@@ -1,0 +1,101 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_call_bg"
+    >
+
+    <ListView
+        android:id="@+id/call_friends"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_setting_bg"
+        android:divider="@color/colorAccent"
+        android:dividerHeight="1dp"
+        android:scrollbars="none"
+        >
+    </ListView>
+
+    <ImageButton
+        android:id="@+id/call_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <LinearLayout
+        android:id="@+id/key_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:id="@+id/call_key_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLength="20"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/call_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:numColumns="3"
+            >
+        </GridView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/sip_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:drawableTop="@mipmap/ic_launcher"
+                android:text="通讯录"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                />
+
+            <Button
+                android:id="@+id/sip_common_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/ic_launcher"
+                android:text="常用人"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

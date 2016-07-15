@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0EFF5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA">
+
+        <com.winsion.dispatch.view.MyIndicator
+            android:id="@+id/rg_indicator"
+            style="@style/MyIndicatorStyle"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="6dp">
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:background="@drawable/selector_operation_indicator_left" />
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:background="@drawable/selector_operation_indicator_middle" />
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:background="@drawable/selector_operation_indicator_middle" />
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:background="@drawable/selector_operation_indicator_right" />
+        </com.winsion.dispatch.view.MyIndicator>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:background="@mipmap/ic_head"
+            android:id="@+id/ib_user_icon"/>
+    </RelativeLayout>
+
+    <com.winsion.dispatch.view.NoScrollViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
